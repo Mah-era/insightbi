@@ -1,0 +1,239 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(uuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         String   @default("VIEWER")
+  avatarUrl    String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  ownedWorkspaces      Workspace[]
+  workspaceMemberships WorkspaceMember[]
+  reports              Report[]
+  activityLogs         ActivityLog[]
+  sharedReports        ReportShare[]
+  createdMeasures      Measure[]         @relation("MeasureCreator")
+  createdEmbedTokens   EmbedToken[]      @relation("EmbedTokenCreator")
+  createdConnections   DataConnection[]  @relation("ConnectionCreator")
+}
+
+model Workspace {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  ownerId     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  owner        User              @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  members      WorkspaceMember[]
+  datasets     Dataset[]
+  reports      Report[]
+  dashboards   Dashboard[]
+  activityLogs ActivityLog[]
+  measures     Measure[]
+  connections  DataConnection[]
+}
+
+model WorkspaceMember {
+  id          String   @id @default(uuid())
+  workspaceId String
+  userId      String
+  role        String   @default("VIEWER")
+  joinedAt    DateTime @default(now())
+
+  workspace Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([workspaceId, userId])
+}
+
+model Dataset {
+  id          String   @id @default(uuid())
+  workspaceId String
+  name        String
+  fileName    String
+  fileType    String
+  filePath    String
+  rowCount    Int      @default(0)
+  columnCount Int      @default(0)
+  schemaJson  String   @default("[]")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  workspace       Workspace          @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  rows            DatasetRow[]
+  transformations Transformation[]
+  relationships   DataRelationship[] @relation("SourceDataset")
+  targetRelations DataRelationship[] @relation("TargetDataset")
+  queryTable      DatasetQueryTable?
+}
+
+model DatasetQueryTable {
+  id            String   @id @default(uuid())
+  datasetId     String   @unique
+  tableName     String
+  columnMapJson String   @default("{}")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  dataset       Dataset  @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+}
+
+model DatasetRow {
+  id        String @id @default(uuid())
+  datasetId String
+  rowIndex  Int
+  rowJson   String @default("{}")
+
+  dataset Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+  @@index([datasetId, rowIndex])
+}
+
+model Transformation {
+  id        String   @id @default(uuid())
+  datasetId String
+  name      String   @default("Transformation")
+  stepsJson String   @default("[]")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  dataset Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+}
+
+model DataRelationship {
+  id               String   @id @default(uuid())
+  sourceDatasetId  String
+  targetDatasetId  String
+  sourceColumn     String
+  targetColumn     String
+  relationshipType String
+  createdAt        DateTime @default(now())
+
+  sourceDataset Dataset @relation("SourceDataset", fields: [sourceDatasetId], references: [id], onDelete: Cascade)
+  targetDataset Dataset @relation("TargetDataset", fields: [targetDatasetId], references: [id], onDelete: Cascade)
+}
+
+model Report {
+  id          String   @id @default(uuid())
+  workspaceId String
+  name        String
+  description String?
+  layoutJson  String   @default("{}")
+  configJson  String   @default("{}")
+  thumbnail   String?
+  createdById String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  workspace   Workspace     @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  createdBy   User          @relation(fields: [createdById], references: [id])
+  dashboard   Dashboard?
+  shareLinks  ShareLink[]
+  shares      ReportShare[]
+  embedTokens EmbedToken[]
+}
+
+model Dashboard {
+  id          String   @id @default(uuid())
+  workspaceId String
+  name        String
+  reportId    String   @unique
+  createdAt   DateTime @default(now())
+
+  workspace Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  report    Report    @relation(fields: [reportId], references: [id], onDelete: Cascade)
+}
+
+model ShareLink {
+  id         String    @id @default(uuid())
+  reportId   String
+  token      String    @unique @default(uuid())
+  permission String    @default("VIEW")
+  isActive   Boolean   @default(true)
+  expiresAt  DateTime?
+  createdAt  DateTime  @default(now())
+
+  report Report @relation(fields: [reportId], references: [id], onDelete: Cascade)
+}
+
+model ReportShare {
+  id         String   @id @default(uuid())
+  reportId   String
+  userId     String
+  permission String   @default("VIEW")
+  createdAt  DateTime @default(now())
+
+  report Report @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([reportId, userId])
+}
+
+model ActivityLog {
+  id           String   @id @default(uuid())
+  userId       String
+  workspaceId  String?
+  action       String
+  metadataJson String   @default("{}")
+  createdAt    DateTime @default(now())
+
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  workspace Workspace? @relation(fields: [workspaceId], references: [id], onDelete: SetNull)
+}
+
+model Measure {
+  id          String   @id @default(uuid())
+  workspaceId String
+  datasetId   String?
+  name        String
+  expression  String
+  format      String   @default("number")
+  description String?
+  createdById String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  createdBy   User      @relation("MeasureCreator", fields: [createdById], references: [id])
+}
+
+model EmbedToken {
+  id             String    @id @default(uuid())
+  reportId       String
+  token          String    @unique @default(uuid())
+  expiresAt      DateTime?
+  allowedOrigin  String?
+  createdById    String
+  createdAt      DateTime  @default(now())
+  revokedAt      DateTime?
+
+  report     Report @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  createdBy  User   @relation("EmbedTokenCreator", fields: [createdById], references: [id])
+}
+
+model DataConnection {
+  id                  String   @id @default(uuid())
+  workspaceId         String
+  name                String
+  type                String
+  configJson          String   @default("{}")
+  encryptedSecretJson String   @default("{}")
+  mode                String   @default("IMPORT")
+  createdById         String
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  createdBy   User      @relation("ConnectionCreator", fields: [createdById], references: [id])
+}

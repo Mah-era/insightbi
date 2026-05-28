@@ -1,0 +1,33 @@
+ Transaction ID , region ,category,Product Name,Units,Unit Price,Discount,Order Date,payment status
+ TX-001 , north ,electronics,Laptop,5,850,,2025/01/12, paid 
+TX-002,South,Furniture,Office Chair,2,160,0.05,12-01-2025,PENDING
+TX-003,east ,,Keyboard,,45,0,2025-02-05,paid
+TX-004, WEST,office supplies,Printer Paper,10,8,0.1,, paid
+TX-005,Central,Accessories,USB Hub,3,,0,2025-02-28,Refunded
+TX-006,North,Electronics,Monitor,1,220,0,2025-03-03,Paid
+TX-006,North,Electronics,Monitor,1,220,0,2025-03-03,Paid
+TX-007,south,Furniture,Standing Desk,1,450,0.15,2025-03-11,pending
+TX-008,East,Office Supplies,Pen Set,20,5,,2025-03-17,PAID
+TX-009,west,Accessories,Webcam,2,75,0,2025-03-19,paid
+TX-011 , north ,electronics,Laptop,5,850,,2025/01/12, paid 
+TX-012 ,South,Furniture,Office Chair,2,160,0.05,12-01-2025,PENDING
+TX-013 ,east ,,Keyboard,,45,0,2025-02-05,paid
+TX-014 , WEST,office supplies,Printer Paper,10,8,0.1,, paid
+TX-015 ,Central,,USB Hub,3,,0,2025-02-28,Refunded
+TX-016 ,North,Electronics,Monitor,1,220,,2025-03-03,Paid
+TX-017 ,North,Electronics,Monitor,1,220,0,2025-03-03,Paid
+TX-018 ,south,Furniture,Standing Desk,1,450,0.15,2025-03-11,pending
+TX-019 ,East,Office Supplies,Pen Set,20,5,,,PAID
+TX-020 ,west,Accessories,Webcam,2,75,0,2025-03-19,paid
+TX-021 , north ,electronics,Laptop,5,850,,2025/01/12, paid 
+TX-022 ,South,,Office Chair,2,160,0.05,12-01-2025,PENDING
+TX-023 ,east ,,Keyboard,,45,0,2025-02-05,paid
+TX-024 , WEST,office supplies,Printer Paper,10,8,0.1,, paid
+TX-025 ,Central,Accessories,USB Hub,3,,0,2025-02-28,Refunded
+TX-026 ,North,Electronics,Monitor,1,220,,2025-03-03,Paid
+TX-027 ,North,Electronics,Monitor,1,220,0,2025-03-03,Paid
+TX-028 ,south,Furniture,Standing Desk,1,450,0.15,,pending
+TX-029 ,East,,Pen Set,20,5,,2025-03-17,PAID
+TX-030 ,west,Accessories,Webcam,2,75,0,2025-03-19,paid
+TX-031 , north ,electronics,Laptop,5,850,,2025/01/12, paid 
+TX-032 ,South,Furniture,Office Chair,2,160,0.05,12-01-2025,PENDING

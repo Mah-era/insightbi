@@ -1,0 +1,9 @@
+Metric,Actual,Target,Unit,Status,Owner,Period
+Monthly Revenue,814700,900000,BDT,Behind,Sales,2025-Q1
+Gross Profit,285145,300000,BDT,On Track,Finance,2025-Q1
+Customer Retention,0.84,0.9,Percent,Behind,Customer Success,2025-Q1
+Order Fulfillment,0.96,0.95,Percent,Ahead,Operations,2025-Q1
+Dataset Upload Success,0.98,0.99,Percent,On Track,Engineering,2025-Q1
+Avg Response Time,420,500,Milliseconds,Ahead,Engineering,2025-Q1
+Public Shares Created,34,40,Count,Behind,Product,2025-Q1
+Active Workspace Members,128,120,Count,Ahead,Admin,2025-Q1

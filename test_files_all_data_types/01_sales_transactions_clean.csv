@@ -1,0 +1,121 @@
+OrderID,OrderDate,Region,Category,ProductID,Product,CustomerID,Units,UnitPrice,Discount,Revenue,Cost,Profit,PaymentStatus,Returned
+ORD-0001,2025-05-06,South,Electronics,P-EL-001,Laptop,CUST-009,12,850,0.05,9690.0,6324.0,3366.0,Paid,False
+ORD-0002,2025-04-22,South,Accessories,P-AC-001,USB Hub,CUST-033,1,35,0,35,17.5,17.5,Refunded,False
+ORD-0003,2025-08-03,South,Furniture,P-FU-003,Bookshelf,CUST-029,11,130,0.15,1215.5,829.4,386.1,Refunded,False
+ORD-0004,2025-06-24,East,Electronics,P-EL-002,Monitor,CUST-010,12,220,0.1,2376.0,1636.8,739.2,Paid,False
+ORD-0005,2025-07-03,East,Electronics,P-EL-001,Laptop,CUST-039,7,850,0,5950,3689.0,2261.0,Paid,False
+ORD-0006,2025-02-10,Central,Accessories,P-AC-003,Webcam,CUST-019,2,75,0.1,135.0,75.0,60.0,Refunded,False
+ORD-0007,2025-04-27,East,Furniture,P-FU-003,Bookshelf,CUST-006,2,130,0,260,150.8,109.2,Paid,False
+ORD-0008,2025-03-25,East,Accessories,P-AC-002,Laptop Stand,CUST-023,8,55,0.05,418.0,220.0,198.0,Paid,False
+ORD-0009,2025-03-25,West,Electronics,P-EL-002,Monitor,CUST-025,9,220,0,1980,1227.6,752.4,Paid,False
+ORD-0010,2025-06-11,West,Office Supplies,P-OS-001,Notebook Pack,CUST-018,4,12,0,48,21.6,26.4,Paid,False
+ORD-0011,2025-07-22,West,Office Supplies,P-OS-002,Printer Paper,CUST-010,11,8,0.1,79.2,39.6,39.6,Paid,False
+ORD-0012,2025-05-15,Central,Furniture,P-FU-003,Bookshelf,CUST-028,9,130,0.15,994.5,678.6,315.9,Refunded,True
+ORD-0013,2025-09-10,North,Office Supplies,P-OS-002,Printer Paper,CUST-004,3,8,0.15,20.4,10.8,9.6,Paid,False
+ORD-0014,2025-02-02,West,Furniture,P-FU-003,Bookshelf,CUST-025,7,130,0.15,773.5,527.8,245.7,Refunded,True
+ORD-0015,2025-05-17,East,Office Supplies,P-OS-001,Notebook Pack,CUST-008,11,12,0,132,59.4,72.6,Paid,True
+ORD-0016,2025-09-14,South,Furniture,P-FU-002,Standing Desk,CUST-033,1,450,0.05,427.5,261.0,166.5,Paid,False
+ORD-0017,2025-01-01,Central,Furniture,P-FU-001,Office Chair,CUST-021,6,160,0,960,556.8,403.2,Pending,False
+ORD-0018,2025-01-30,South,Electronics,P-EL-003,Keyboard,CUST-037,5,45,0,225,139.5,85.5,Paid,False
+ORD-0019,2025-03-07,West,Accessories,P-AC-001,USB Hub,CUST-036,9,35,0,315,157.5,157.5,Paid,False
+ORD-0020,2025-06-09,West,Accessories,P-AC-001,USB Hub,CUST-024,9,35,0,315,157.5,157.5,Pending,True
+ORD-0021,2025-06-23,North,Electronics,P-EL-002,Monitor,CUST-038,4,220,0,880,545.6,334.4,Refunded,False
+ORD-0022,2025-04-28,North,Furniture,P-FU-001,Office Chair,CUST-003,2,160,0,320,185.6,134.4,Paid,False
+ORD-0023,2025-04-20,Central,Furniture,P-FU-002,Standing Desk,CUST-009,11,450,0.1,4455.0,2871.0,1584.0,Refunded,True
+ORD-0024,2025-02-18,North,Furniture,P-FU-002,Standing Desk,CUST-028,7,450,0,3150,1827.0,1323.0,Paid,True
+ORD-0025,2025-02-20,North,Accessories,P-AC-002,Laptop Stand,CUST-026,12,55,0,660,330.0,330.0,Paid,False
+ORD-0026,2025-08-18,South,Furniture,P-FU-001,Office Chair,CUST-028,4,160,0.15,544.0,371.2,172.8,Paid,False
+ORD-0027,2025-02-20,North,Accessories,P-AC-001,USB Hub,CUST-035,2,35,0.1,63.0,35.0,28.0,Paid,False
+ORD-0028,2025-09-04,South,Furniture,P-FU-001,Office Chair,CUST-026,7,160,0.1,1008.0,649.6,358.4,Paid,False
+ORD-0029,2025-08-21,East,Accessories,P-AC-001,USB Hub,CUST-028,7,35,0.05,232.75,122.5,110.25,Refunded,True
+ORD-0030,2025-01-30,Central,Furniture,P-FU-001,Office Chair,CUST-035,5,160,0,800,464.0,336.0,Paid,False
+ORD-0031,2025-09-15,Central,Electronics,P-EL-001,Laptop,CUST-011,10,850,0.1,7650.0,5270.0,2380.0,Paid,False
+ORD-0032,2025-05-01,West,Furniture,P-FU-001,Office Chair,CUST-008,10,160,0,1600,928.0,672.0,Refunded,False
+ORD-0033,2025-09-25,East,Electronics,P-EL-001,Laptop,CUST-017,7,850,0.15,5057.5,3689.0,1368.5,Paid,False
+ORD-0034,2025-06-03,West,Furniture,P-FU-002,Standing Desk,CUST-021,7,450,0,3150,1827.0,1323.0,Paid,False
+ORD-0035,2025-02-07,Central,Accessories,P-AC-003,Webcam,CUST-014,10,75,0,750,375.0,375.0,Refunded,False
+ORD-0036,2025-07-09,East,Furniture,P-FU-002,Standing Desk,CUST-011,2,450,0,900,522.0,378.0,Pending,False
+ORD-0037,2025-03-10,East,Electronics,P-EL-003,Keyboard,CUST-008,11,45,0,495,306.9,188.1,Paid,False
+ORD-0038,2025-06-25,South,Office Supplies,P-OS-003,Pen Set,CUST-017,10,5,0,50,22.5,27.5,Refunded,True
+ORD-0039,2025-05-22,North,Office Supplies,P-OS-001,Notebook Pack,CUST-001,2,12,0.1,21.6,10.8,10.8,Paid,False
+ORD-0040,2025-08-07,Central,Office Supplies,P-OS-002,Printer Paper,CUST-001,12,8,0.1,86.4,43.2,43.2,Paid,False
+ORD-0041,2025-03-17,West,Furniture,P-FU-003,Bookshelf,CUST-009,1,130,0.05,123.5,75.4,48.1,Paid,False
+ORD-0042,2025-05-08,North,Office Supplies,P-OS-001,Notebook Pack,CUST-023,6,12,0,72,32.4,39.6,Refunded,True
+ORD-0043,2025-07-31,North,Furniture,P-FU-001,Office Chair,CUST-012,3,160,0,480,278.4,201.6,Paid,True
+ORD-0044,2025-07-15,North,Furniture,P-FU-002,Standing Desk,CUST-031,3,450,0,1350,783.0,567.0,Paid,False
+ORD-0045,2025-04-25,North,Accessories,P-AC-002,Laptop Stand,CUST-013,5,55,0,275,137.5,137.5,Pending,False
+ORD-0046,2025-09-18,West,Office Supplies,P-OS-001,Notebook Pack,CUST-035,5,12,0.05,57.0,27.0,30.0,Paid,False
+ORD-0047,2025-05-16,North,Electronics,P-EL-003,Keyboard,CUST-007,3,45,0.15,114.75,83.7,31.05,Refunded,True
+ORD-0048,2025-09-19,North,Office Supplies,P-OS-003,Pen Set,CUST-025,7,5,0.15,29.75,15.75,14.0,Refunded,False
+ORD-0049,2025-01-01,Central,Office Supplies,P-OS-001,Notebook Pack,CUST-035,12,12,0.1,129.6,64.8,64.8,Paid,False
+ORD-0050,2025-06-10,North,Accessories,P-AC-001,USB Hub,CUST-020,11,35,0.05,365.75,192.5,173.25,Refunded,False
+ORD-0051,2025-03-07,South,Accessories,P-AC-002,Laptop Stand,CUST-027,7,55,0.05,365.75,192.5,173.25,Pending,False
+ORD-0052,2025-06-05,East,Office Supplies,P-OS-004,Binder,CUST-014,9,7,0,63,28.35,34.65,Pending,False
+ORD-0053,2025-09-19,West,Accessories,P-AC-002,Laptop Stand,CUST-011,8,55,0,440,220.0,220.0,Paid,False
+ORD-0054,2025-04-26,South,Office Supplies,P-OS-001,Notebook Pack,CUST-010,4,12,0.05,45.6,21.6,24.0,Paid,False
+ORD-0055,2025-08-22,West,Furniture,P-FU-002,Standing Desk,CUST-037,10,450,0,4500,2610.0,1890.0,Paid,True
+ORD-0056,2025-01-03,North,Accessories,P-AC-002,Laptop Stand,CUST-028,4,55,0,220,110.0,110.0,Paid,False
+ORD-0057,2025-03-04,West,Accessories,P-AC-001,USB Hub,CUST-009,9,35,0,315,157.5,157.5,Pending,False
+ORD-0058,2025-08-07,Central,Accessories,P-AC-003,Webcam,CUST-029,12,75,0.15,765.0,450.0,315.0,Paid,True
+ORD-0059,2025-09-24,West,Accessories,P-AC-002,Laptop Stand,CUST-016,4,55,0.05,209.0,110.0,99.0,Paid,True
+ORD-0060,2025-06-21,East,Electronics,P-EL-003,Keyboard,CUST-035,4,45,0.05,171.0,111.6,59.4,Paid,False
+ORD-0061,2025-04-20,North,Furniture,P-FU-001,Office Chair,CUST-027,7,160,0,1120,649.6,470.4,Pending,False
+ORD-0062,2025-08-04,West,Accessories,P-AC-002,Laptop Stand,CUST-038,1,55,0,55,27.5,27.5,Paid,True
+ORD-0063,2025-07-19,West,Accessories,P-AC-001,USB Hub,CUST-035,6,35,0.05,199.5,105.0,94.5,Refunded,False
+ORD-0064,2025-09-06,North,Accessories,P-AC-001,USB Hub,CUST-025,5,35,0.1,157.5,87.5,70.0,Paid,True
+ORD-0065,2025-01-14,West,Furniture,P-FU-002,Standing Desk,CUST-038,3,450,0.15,1147.5,783.0,364.5,Refunded,False
+ORD-0066,2025-04-04,North,Electronics,P-EL-004,Mouse,CUST-017,3,25,0.1,67.5,46.5,21.0,Pending,False
+ORD-0067,2025-07-14,East,Furniture,P-FU-002,Standing Desk,CUST-027,6,450,0.05,2565.0,1566.0,999.0,Paid,False
+ORD-0068,2025-01-27,East,Accessories,P-AC-001,USB Hub,CUST-015,12,35,0.15,357.0,210.0,147.0,Paid,False
+ORD-0069,2025-03-20,South,Electronics,P-EL-002,Monitor,CUST-009,4,220,0,880,545.6,334.4,Pending,False
+ORD-0070,2025-07-08,South,Furniture,P-FU-002,Standing Desk,CUST-039,12,450,0.05,5130.0,3132.0,1998.0,Refunded,False
+ORD-0071,2025-01-14,East,Furniture,P-FU-002,Standing Desk,CUST-037,2,450,0.15,765.0,522.0,243.0,Pending,True
+ORD-0072,2025-02-22,East,Furniture,P-FU-001,Office Chair,CUST-039,10,160,0,1600,928.0,672.0,Paid,False
+ORD-0073,2025-02-05,Central,Office Supplies,P-OS-004,Binder,CUST-022,11,7,0.05,73.15,34.65,38.5,Paid,True
+ORD-0074,2025-08-24,South,Accessories,P-AC-001,USB Hub,CUST-028,7,35,0.05,232.75,122.5,110.25,Paid,False
+ORD-0075,2025-05-18,East,Accessories,P-AC-002,Laptop Stand,CUST-016,7,55,0.15,327.25,192.5,134.75,Paid,False
+ORD-0076,2025-07-14,East,Accessories,P-AC-001,USB Hub,CUST-002,8,35,0.15,238.0,140.0,98.0,Pending,False
+ORD-0077,2025-05-13,East,Furniture,P-FU-002,Standing Desk,CUST-018,4,450,0.05,1710.0,1044.0,666.0,Refunded,False
+ORD-0078,2025-07-28,West,Electronics,P-EL-002,Monitor,CUST-036,2,220,0,440,272.8,167.2,Paid,True
+ORD-0079,2025-05-31,South,Accessories,P-AC-002,Laptop Stand,CUST-026,1,55,0,55,27.5,27.5,Paid,False
+ORD-0080,2025-06-26,West,Office Supplies,P-OS-004,Binder,CUST-036,9,7,0.15,53.55,28.35,25.2,Paid,False
+ORD-0081,2025-04-29,North,Accessories,P-AC-002,Laptop Stand,CUST-013,5,55,0.05,261.25,137.5,123.75,Paid,False
+ORD-0082,2025-05-22,Central,Furniture,P-FU-001,Office Chair,CUST-034,4,160,0.1,576.0,371.2,204.8,Refunded,False
+ORD-0083,2025-07-04,South,Electronics,P-EL-002,Monitor,CUST-020,5,220,0,1100,682.0,418.0,Paid,False
+ORD-0084,2025-05-30,South,Office Supplies,P-OS-001,Notebook Pack,CUST-032,1,12,0.15,10.2,5.4,4.8,Paid,False
+ORD-0085,2025-06-24,South,Office Supplies,P-OS-004,Binder,CUST-004,8,7,0.1,50.4,25.2,25.2,Paid,True
+ORD-0086,2025-02-07,Central,Electronics,P-EL-001,Laptop,CUST-004,7,850,0.1,5355.0,3689.0,1666.0,Paid,False
+ORD-0087,2025-08-02,Central,Office Supplies,P-OS-001,Notebook Pack,CUST-039,4,12,0,48,21.6,26.4,Refunded,False
+ORD-0088,2025-08-08,East,Accessories,P-AC-002,Laptop Stand,CUST-037,8,55,0.05,418.0,220.0,198.0,Refunded,False
+ORD-0089,2025-05-16,North,Electronics,P-EL-002,Monitor,CUST-011,11,220,0,2420,1500.4,919.6,Paid,False
+ORD-0090,2025-08-19,Central,Electronics,P-EL-002,Monitor,CUST-031,1,220,0.1,198.0,136.4,61.6,Paid,False
+ORD-0091,2025-08-21,North,Furniture,P-FU-002,Standing Desk,CUST-015,12,450,0.05,5130.0,3132.0,1998.0,Paid,False
+ORD-0092,2025-03-18,East,Accessories,P-AC-001,USB Hub,CUST-010,9,35,0,315,157.5,157.5,Paid,False
+ORD-0093,2025-05-28,West,Furniture,P-FU-002,Standing Desk,CUST-008,10,450,0.15,3825.0,2610.0,1215.0,Pending,False
+ORD-0094,2025-09-10,West,Accessories,P-AC-002,Laptop Stand,CUST-006,9,55,0.15,420.75,247.5,173.25,Refunded,False
+ORD-0095,2025-05-09,North,Accessories,P-AC-003,Webcam,CUST-006,6,75,0.15,382.5,225.0,157.5,Paid,False
+ORD-0096,2025-09-23,West,Office Supplies,P-OS-001,Notebook Pack,CUST-018,3,12,0.1,32.4,16.2,16.2,Paid,True
+ORD-0097,2025-07-29,East,Accessories,P-AC-001,USB Hub,CUST-021,8,35,0.05,266.0,140.0,126.0,Paid,False
+ORD-0098,2025-05-28,West,Office Supplies,P-OS-004,Binder,CUST-036,12,7,0.1,75.6,37.8,37.8,Paid,True
+ORD-0099,2025-03-01,West,Electronics,P-EL-003,Keyboard,CUST-033,5,45,0.05,213.75,139.5,74.25,Paid,True
+ORD-0100,2025-07-05,Central,Accessories,P-AC-001,USB Hub,CUST-032,4,35,0.15,119.0,70.0,49.0,Pending,False
+ORD-0101,2025-05-28,West,Furniture,P-FU-002,Standing Desk,CUST-032,9,450,0,4050,2349.0,1701.0,Paid,False
+ORD-0102,2025-01-08,Central,Furniture,P-FU-003,Bookshelf,CUST-027,3,130,0.05,370.5,226.2,144.3,Paid,False
+ORD-0103,2025-09-13,East,Electronics,P-EL-004,Mouse,CUST-033,2,25,0,50,31.0,19.0,Paid,True
+ORD-0104,2025-03-16,West,Accessories,P-AC-002,Laptop Stand,CUST-013,4,55,0.1,198.0,110.0,88.0,Refunded,False
+ORD-0105,2025-09-17,East,Electronics,P-EL-003,Keyboard,CUST-001,7,45,0.05,299.25,195.3,103.95,Paid,False
+ORD-0106,2025-09-05,East,Accessories,P-AC-001,USB Hub,CUST-022,8,35,0.15,238.0,140.0,98.0,Refunded,True
+ORD-0107,2025-07-16,South,Accessories,P-AC-002,Laptop Stand,CUST-027,4,55,0,220,110.0,110.0,Paid,False
+ORD-0108,2025-03-19,West,Accessories,P-AC-003,Webcam,CUST-003,7,75,0.1,472.5,262.5,210.0,Paid,False
+ORD-0109,2025-08-22,North,Electronics,P-EL-004,Mouse,CUST-010,2,25,0.15,42.5,31.0,11.5,Pending,False
+ORD-0110,2025-07-23,North,Electronics,P-EL-004,Mouse,CUST-022,5,25,0.05,118.75,77.5,41.25,Refunded,True
+ORD-0111,2025-02-05,South,Office Supplies,P-OS-004,Binder,CUST-019,9,7,0,63,28.35,34.65,Paid,False
+ORD-0112,2025-08-16,South,Accessories,P-AC-001,USB Hub,CUST-020,11,35,0,385,192.5,192.5,Paid,False
+ORD-0113,2025-07-11,West,Office Supplies,P-OS-001,Notebook Pack,CUST-010,5,12,0.05,57.0,27.0,30.0,Paid,True
+ORD-0114,2025-07-15,Central,Furniture,P-FU-001,Office Chair,CUST-016,3,160,0,480,278.4,201.6,Pending,False
+ORD-0115,2025-08-24,East,Furniture,P-FU-002,Standing Desk,CUST-001,11,450,0.05,4702.5,2871.0,1831.5,Pending,False
+ORD-0116,2025-06-03,West,Furniture,P-FU-001,Office Chair,CUST-017,8,160,0.05,1216.0,742.4,473.6,Pending,False
+ORD-0117,2025-05-02,West,Furniture,P-FU-002,Standing Desk,CUST-037,8,450,0,3600,2088.0,1512.0,Paid,False
+ORD-0118,2025-05-21,North,Office Supplies,P-OS-001,Notebook Pack,CUST-037,11,12,0.1,118.8,59.4,59.4,Paid,True
+ORD-0119,2025-04-23,South,Office Supplies,P-OS-002,Printer Paper,CUST-040,10,8,0.05,76.0,36.0,40.0,Paid,False
+ORD-0120,2025-01-18,Central,Electronics,P-EL-001,Laptop,CUST-024,5,850,0.1,3825.0,2635.0,1190.0,Paid,False

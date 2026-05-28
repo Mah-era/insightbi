@@ -1,0 +1,33 @@
+# Render Blueprint — free backend deploy for InsightBI
+# Frontend is deployed separately on Vercel (see client/vercel.json).
+#
+# What this does:
+#   • Builds the Express/TypeScript API
+#   • Runs Prisma migrations, then seeds the basic + comprehensive demo data
+#   • Starts the server on Render's $PORT
+#
+# Note: the free plan has an EPHEMERAL filesystem and spins down after ~15 min
+# idle. The SQLite DB is re-seeded on every new deploy, so the demo data
+# (admin/demo logins + the 8 showcase reports) is always present.
+services:
+  - type: web
+    name: insightbi-api
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install && npm run build && npm run deploy:setup
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: file:./dev.db
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: MAX_FILE_SIZE_MB
+        value: "50"
+      - key: UPLOAD_DIR
+        value: ./uploads

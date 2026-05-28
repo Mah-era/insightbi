@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment / secrets
+.env
+.env.local
+**/.env
+!**/.env.example
+
+# Build output
+dist/
+build/
+client/dist/
+server/dist/
+
+# Database (SQLite) — recreated by seed on deploy
+*.db
+*.db-journal
+*.sqlite
+**/dev.db
+**/deploytest.db
+
+# Uploads (user files)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Vite / misc
+.vite/
+*.tsbuildinfo
+
+# Vercel
+.vercel

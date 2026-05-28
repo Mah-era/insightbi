@@ -1,0 +1,25 @@
+Month,Campaign,Stage,Users,DropOffRate,Market
+2025-01,Spring Sale,Website Visits,126894,,BD
+2025-01,Spring Sale,Product Views,72293,0.4303,BD
+2025-01,Spring Sale,Add to Cart,26221,0.6373,BD
+2025-01,Spring Sale,Checkout Started,13558,0.4829,BD
+2025-01,Spring Sale,Payment Completed,9398,0.3068,BD
+2025-01,Spring Sale,Repeat Purchase,2633,0.7198,BD
+2025-02,Spring Sale,Website Visits,108046,,BD
+2025-02,Spring Sale,Product Views,58328,0.4602,BD
+2025-02,Spring Sale,Add to Cart,21232,0.636,BD
+2025-02,Spring Sale,Checkout Started,11137,0.4755,BD
+2025-02,Spring Sale,Payment Completed,7883,0.2922,BD
+2025-02,Spring Sale,Repeat Purchase,1989,0.7477,BD
+2025-03,Spring Sale,Website Visits,115083,,BD
+2025-03,Spring Sale,Product Views,67388,0.4144,BD
+2025-03,Spring Sale,Add to Cart,24103,0.6423,BD
+2025-03,Spring Sale,Checkout Started,12360,0.4872,BD
+2025-03,Spring Sale,Payment Completed,8596,0.3045,BD
+2025-03,Spring Sale,Repeat Purchase,2247,0.7386,BD
+2025-04,Spring Sale,Website Visits,134301,,BD
+2025-04,Spring Sale,Product Views,76418,0.431,BD
+2025-04,Spring Sale,Add to Cart,28052,0.6329,BD
+2025-04,Spring Sale,Checkout Started,14807,0.4722,BD
+2025-04,Spring Sale,Payment Completed,9898,0.3315,BD
+2025-04,Spring Sale,Repeat Purchase,2519,0.7455,BD

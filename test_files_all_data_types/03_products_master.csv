@@ -1,0 +1,15 @@
+ProductID,Product,Category,UnitCost,ListPrice,Supplier,ReorderLevel,Active
+P-EL-001,Laptop,Electronics,527.0,850,Bengal Wholesale,49,True
+P-EL-002,Monitor,Electronics,136.4,220,Delta Traders,74,True
+P-EL-003,Keyboard,Electronics,27.9,45,Nova Supply,71,True
+P-EL-004,Mouse,Electronics,15.5,25,Delta Traders,54,True
+P-FU-001,Office Chair,Furniture,92.8,160,Delta Traders,45,True
+P-FU-002,Standing Desk,Furniture,261.0,450,TechBridge,13,True
+P-FU-003,Bookshelf,Furniture,75.4,130,Delta Traders,33,True
+P-OS-001,Notebook Pack,Office Supplies,5.4,12,OfficeX,53,True
+P-OS-002,Printer Paper,Office Supplies,3.6,8,Delta Traders,33,True
+P-OS-003,Pen Set,Office Supplies,2.25,5,Bengal Wholesale,61,True
+P-OS-004,Binder,Office Supplies,3.15,7,Nova Supply,13,True
+P-AC-001,USB Hub,Accessories,17.5,35,Bengal Wholesale,37,False
+P-AC-002,Laptop Stand,Accessories,27.5,55,TechBridge,68,True
+P-AC-003,Webcam,Accessories,37.5,75,Nova Supply,57,True

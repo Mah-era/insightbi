@@ -1,0 +1,41 @@
+CustomerID,CustomerName,Segment,City,Country,SignupDate,IsActive,CreditLimit
+CUST-001,Customer 01,Small Business,Cumilla,Bangladesh,2025-02-04,False,50000
+CUST-002,Customer 02,Corporate,Sylhet,Bangladesh,2025-03-16,True,150000
+CUST-003,Customer 03,Small Business,Sylhet,Bangladesh,2023-09-21,False,75000
+CUST-004,Customer 04,Small Business,Chattogram,Bangladesh,2024-04-24,True,50000
+CUST-005,Customer 05,Corporate,Barishal,Bangladesh,2025-04-03,True,25000
+CUST-006,Customer 06,Enterprise,Dhaka,Bangladesh,2023-09-28,True,100000
+CUST-007,Customer 07,Small Business,Rajshahi,Bangladesh,2024-08-21,False,75000
+CUST-008,Customer 08,Consumer,Khulna,Bangladesh,2024-04-27,True,150000
+CUST-009,Customer 09,Small Business,Khulna,Bangladesh,2024-10-25,True,100000
+CUST-010,Customer 10,Small Business,Barishal,Bangladesh,2023-04-30,True,25000
+CUST-011,Customer 11,Consumer,Rajshahi,Bangladesh,2024-05-19,True,25000
+CUST-012,Customer 12,Corporate,Sylhet,Bangladesh,2024-02-02,False,75000
+CUST-013,Customer 13,Enterprise,Sylhet,Bangladesh,2024-02-29,True,100000
+CUST-014,Customer 14,Enterprise,Rajshahi,Bangladesh,2023-02-03,True,50000
+CUST-015,Customer 15,Enterprise,Rangpur,Bangladesh,2023-08-30,True,25000
+CUST-016,Customer 16,Small Business,Cumilla,Bangladesh,2023-03-04,False,75000
+CUST-017,Customer 17,Corporate,Chattogram,Bangladesh,2025-04-23,False,25000
+CUST-018,Customer 18,Corporate,Dhaka,Bangladesh,2023-02-21,True,50000
+CUST-019,Customer 19,Corporate,Khulna,Bangladesh,2023-03-12,True,150000
+CUST-020,Customer 20,Corporate,Khulna,Bangladesh,2023-12-03,True,150000
+CUST-021,Customer 21,Consumer,Rajshahi,Bangladesh,2023-05-29,True,150000
+CUST-022,Customer 22,Small Business,Sylhet,Bangladesh,2023-04-23,True,50000
+CUST-023,Customer 23,Consumer,Cumilla,Bangladesh,2025-03-19,True,150000
+CUST-024,Customer 24,Small Business,Dhaka,Bangladesh,2023-06-28,True,25000
+CUST-025,Customer 25,Corporate,Barishal,Bangladesh,2024-06-22,True,25000
+CUST-026,Customer 26,Enterprise,Rangpur,Bangladesh,2025-03-07,True,150000
+CUST-027,Customer 27,Consumer,Rangpur,Bangladesh,2024-05-30,True,150000
+CUST-028,Customer 28,Consumer,Rajshahi,Bangladesh,2024-04-14,True,25000
+CUST-029,Customer 29,Enterprise,Barishal,Bangladesh,2024-03-12,True,100000
+CUST-030,Customer 30,Enterprise,Chattogram,Bangladesh,2023-03-24,True,150000
+CUST-031,Customer 31,Corporate,Chattogram,Bangladesh,2023-05-10,True,150000
+CUST-032,Customer 32,Small Business,Barishal,Bangladesh,2024-09-03,True,100000
+CUST-033,Customer 33,Enterprise,Chattogram,Bangladesh,2025-03-23,True,150000
+CUST-034,Customer 34,Corporate,Barishal,Bangladesh,2024-04-07,True,100000
+CUST-035,Customer 35,Small Business,Rangpur,Bangladesh,2024-02-13,False,25000
+CUST-036,Customer 36,Small Business,Barishal,Bangladesh,2023-11-17,True,75000
+CUST-037,Customer 37,Corporate,Rangpur,Bangladesh,2023-03-10,True,25000
+CUST-038,Customer 38,Consumer,Barishal,Bangladesh,2023-04-09,True,50000
+CUST-039,Customer 39,Consumer,Cumilla,Bangladesh,2024-11-17,True,100000
+CUST-040,Customer 40,Small Business,Barishal,Bangladesh,2025-01-08,True,75000
